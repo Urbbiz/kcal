@@ -3,6 +3,7 @@ EXECUTION
 ****************/
 
 const diary = new Diary();
+loadMeals();
 
 showMeals();
 
