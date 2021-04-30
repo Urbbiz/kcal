@@ -5,11 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macro counter</title>
+    <title>Nutrition diary</title>
+
 </head>
 
 <body>
 
+    <div>
+        <div>
+            <h2> Name </h2>
+            <h4> Carb</h4>
+            <h4> Protein</h4>
+            <h4> Fat</h4>
+            <h4> Kcal</h4>
+        </div>
+    </div>
+
+    <section class="container new-pizza-form">
+        <div class="row">
+            <div class="col-4-6">
+                <h2> <span>Add </span>Meal</h2>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-4-6 col-xs-12">
+                <form class="block ">
+                    <div class="name">
+                        <div><label for="new-name">Name:</label></div>
+                        <div class="validation" id="new-name-validation"></div>
+                        <input type="text" id="new-name" />
+                    </div>
+                    <div class="name">
+                        <div><label for="new-carb">Carb:</label></div>
+                        <div class="validation" id="new-carb-validation"></div>
+                        <input type="text" id="new-carb" />
+                    </div>
+                    <div class="name">
+                        <div><label for="new-protein">Protein:</label></div>
+                        <div class="validation" id="new-protein-validation"></div>
+                        <input type="text" id="new-protein" />
+                    </div>
+                    <div class="name">
+                        <div><label for="new-fat">Fat:</label></div>
+                        <div class="validation" id="new-fat-validation"></div>
+                        <input type="text" id="new-fat" />
+                    </div>
+                    <div class="name">
+                        <div><label for="new-kcal">Kcal:</label></div>
+                        <div class="validation" id="new-kcal-validation"></div>
+                        <input type="text" id="new-kcal" />
+                    </div>
+
+                    <button class="btn-white" type="button" id="add-new-pizza">Add Meal</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="./js/components/Meal.js"></script>
 </body>
 
 </html>
