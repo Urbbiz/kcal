@@ -28,7 +28,13 @@ function showMeals() {
 };
 
 
-
+function clearAddForm() {
+    document.getElementById("new-name").value = "";
+    document.getElementById("new-carb").value = "";
+    document.getElementById("new-protein").value = "";
+    document.getElementById("new-fat").value = "";
+    document.getElementById("new-kcal").value = "";
+}
 
 function addMeal() {
     const params = {
@@ -38,4 +44,15 @@ function addMeal() {
         fat: document.getElementById("new-fat").value,
         kcal: document.getElementById("new-kcal").value,
     };
+
+    diary.addMeal({
+        name: params.name,
+        carb: params.carb,
+        protein: params.protein,
+        fat: params.fat,
+        kcal: params.kcal,
+
+    });
+    clearAddForm();
+    showMeals();
 }
