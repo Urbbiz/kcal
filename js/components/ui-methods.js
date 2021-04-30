@@ -1,4 +1,4 @@
-let sortType = "";
+// let sortType = "";
 
 function showMeals() {
 
@@ -55,4 +55,5 @@ function addMeal() {
     });
     clearAddForm();
     showMeals();
+
 }

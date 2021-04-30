@@ -3,7 +3,7 @@ class Diary {
     constructor() {
         this.meals = [];
         this.sessionStorageKey = 'meals';
-    };
+    }
 
     loadMeals() {
         this.meals = JSON.parse(sessionStorage.getItem(this.sessionStorageKey)) || [];
