@@ -19,5 +19,13 @@ class Diary {
         this.saveMeals();
     };
 
+    deleteMeal(insertDate) {
+        const index = this.meals.findIndex(meal => meal.insertDate === insertDate);
+        this.meals.splice(index, 1); //trina pizza is arejaus.
+        this.saveMeals();
+    };
 
+    totalCarbs() {
+        return this.meals.reduce((currentTotal, currentMeal) => currentTotal + currentMeal.carb, 0);
+    };
 }

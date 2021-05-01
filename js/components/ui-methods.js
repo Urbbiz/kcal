@@ -3,7 +3,7 @@
 function showMeals() {
 
     let html = "";
-    const meals = diary;
+    const meals = diary.meals;
     if (meals.length) {
         meals.forEach(function(meal) {
 
@@ -16,7 +16,7 @@ function showMeals() {
                     <p> ${meal.fat} g. </p>
                     <p> ${meal.kcal} kcal. </p>
                 
-                    <button class="btn-red" type="button" onclick="editMeal('${meal.insertDate}')">Edit</button>
+                <button class="btn-red" type="button" onclick="editMeal('${meal.insertDate}')">Edit</button>
                 <button class="btn-red" type="button" onclick="deleteMeal('${meal.insertDate}')">Delete</button>
                 </div>
             </div>`;
@@ -25,28 +25,8 @@ function showMeals() {
         html = '<div class="col-12">No meals</div>';
     }
     document.getElementById("meal-diary").innerHTML = html;
-};
+    document.getElementById("total-carbs").innerText = diary.totalCarbs();
 
-function showTotalMacro() {
-
-    let html = "";
-    const meals = diary;
-    if (meals.length) {
-        meals.forEach(function(meal) {
-
-            html += `
-            <div class="col-12">
-                <div class="block">
-                    <p> ${meal.carbTotal} g. </p>
-                    <p> ${meal.proteinTotal} g. </p>
-                    <p> ${meal.fatTotal} g. </p>
-                    <p> ${meal.kcalTotal} kcal. </p>   
-            </div>`;
-        });
-    } else {
-        html = '<div class="col-12">No macros</div>'; // noriu kad visai nerodytu, jeigu nera jokiu meals.
-    }
-    document.getElementById("total-macro").innerHTML = html;
 };
 
 
@@ -69,14 +49,19 @@ function addMeal() {
 
     diary.addMeal({
         name: params.name,
-        carb: params.carb,
-        protein: params.protein,
-        fat: params.fat,
-        kcal: params.kcal,
+        carb: +params.carb, //https://stackoverflow.com/a/221565
+        protein: +params.protein,
+        fat: +params.fat,
+        kcal: +params.kcal,
 
     });
     clearAddForm();
     showMeals();
-    showTotalMacro()
+}
 
+function deleteMeal(insertDate) {
+    if (!confirm("Are you sure?")) return false;
+    diary.deleteMeal(insertDate);
+
+    showMeals();
 }
