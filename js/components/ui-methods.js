@@ -27,6 +27,28 @@ function showMeals() {
     document.getElementById("meal-diary").innerHTML = html;
 };
 
+function showTotalMacro() {
+
+    let html = "";
+    const meals = diary;
+    if (meals.length) {
+        meals.forEach(function(meal) {
+
+            html += `
+            <div class="col-12">
+                <div class="block">
+                    <p> ${meal.carbTotal} g. </p>
+                    <p> ${meal.proteinTotal} g. </p>
+                    <p> ${meal.fatTotal} g. </p>
+                    <p> ${meal.kcalTotal} kcal. </p>   
+            </div>`;
+        });
+    } else {
+        html = '<div class="col-12">No macros</div>'; // noriu kad visai nerodytu, jeigu nera jokiu meals.
+    }
+    document.getElementById("total-macro").innerHTML = html;
+};
+
 
 function clearAddForm() {
     document.getElementById("new-name").value = "";
@@ -55,5 +77,6 @@ function addMeal() {
     });
     clearAddForm();
     showMeals();
+    showTotalMacro()
 
 }
