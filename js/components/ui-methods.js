@@ -22,7 +22,7 @@ function showMeals() {
             </div>`;
         });
     } else {
-        html = '<div class="col-12">No pizzas</div>';
+        html = '<div class="col-12">No meals</div>';
     }
     document.getElementById("meal-diary").innerHTML = html;
 };
