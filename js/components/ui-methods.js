@@ -28,6 +28,7 @@ function showMeals() {
     document.getElementById("total-carbs").innerText = diary.totalCarbs();
     document.getElementById("total-protein").innerText = diary.totalProtein();
     document.getElementById("total-fat").innerText = diary.totalFat();
+    document.getElementById("total-kcal").innerText = diary.totalKcal();
 
 };
 
