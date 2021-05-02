@@ -28,4 +28,7 @@ class Diary {
     totalCarbs() {
         return this.meals.reduce((currentTotal, currentMeal) => currentTotal + currentMeal.carb, 0);
     };
+    totalProtein() {
+        return this.meals.reduce((currentTotal, currentMeal) => currentTotal + currentMeal.protein, 0);
+    }
 }
