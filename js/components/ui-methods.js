@@ -16,7 +16,7 @@ function showMeals() {
                     <p> ${meal.protein} g. </p>
                     <p> ${meal.fat} g. </p>
                     <p> ${meal.kcal} kcal. </p>
-                
+
                 <button class="btn-red" type="button" onclick="editMeal('${meal.insertDate}')">Edit</button>
                 <button class="btn-red" type="button" onclick="deleteMeal('${meal.insertDate}')">Delete</button>
                 </div>
