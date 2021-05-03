@@ -2,6 +2,7 @@
 
 function showMeals() {
 
+
     let html = "";
     const meals = diary.meals;
     if (meals.length) {
