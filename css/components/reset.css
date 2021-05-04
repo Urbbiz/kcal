@@ -3,7 +3,7 @@ body {
 }
 
 .lightbox {
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0;
     right: 0;
@@ -31,4 +31,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.update {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px #0003;
 }
