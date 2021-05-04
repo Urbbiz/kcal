@@ -4,7 +4,7 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
 
-# Kcal- macros counte rwith some information abaout it , and quiz.
+# Kcal and macros counter with some information abaout it , and quiz.
 ### Website project
 
 This project is for educational porpuses only.Kcal and macros counter, with some information abaout it , and quiz.
