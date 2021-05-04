@@ -8,7 +8,7 @@
 ### Website project
 
 This project is for educational porpuses only.Kcal and macros counter, with some information abaout it , and quiz.
-Site published at :
+Site published at : https://urbbiz.github.io/kcal/
 
 Design: random
 
