@@ -18,7 +18,7 @@ function showMeals() {
                     <p> ${meal.kcal} kcal. </p>
                     <div class="actions ">
                 <button class="btn small edit" type="button" onclick="editMeal('${meal.insertDate}')">Edit</button>
-                <button class="btn small remove" type="button" onclick="deleteMeal('${meal.insertDate}')">Delete</button>
+                <button id="obuolys" class="btn small remove" type="button" onclick="deleteMeal('${meal.insertDate}')">Delete</button>
                 </div>
                 </div>
             </div>`;
