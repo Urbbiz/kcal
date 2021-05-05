@@ -107,3 +107,30 @@ body {
     resize: vertical;
     border: 1px solid #777;
 }
+
+.list {
+    padding: 30px;
+    gap: 30px;
+}
+
+.item {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+}
+
+.item>.actions {
+    display: none;
+    position: absolute;
+    bottom: 0.5em;
+    /* left: 7em; */
+}
+
+.item:hover>.actions {
+    display: inline-block;
+}
