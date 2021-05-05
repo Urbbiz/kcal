@@ -11,15 +11,15 @@ function showMeals() {
             html += `
             <div class="col-4 col-sm-6 col-xs-12 list  ">
                 <div class="block item ">
-                     <h3>${meal.name} </h3>
-                    <p> ${meal.carb} g. </p>
+                    <h3>${meal.name} </h3>
+                     <p> ${meal.carb} g. </p>
                     <p> ${meal.protein} g. </p>
                     <p> ${meal.fat} g. </p>
                     <p> ${meal.kcal} kcal. </p>
                     <div class="actions ">
-                <button class="btn small edit" type="button" onclick="editMeal('${meal.insertDate}')">Edit</button>
-                <button id="obuolys" class="btn small remove" type="button" onclick="deleteMeal('${meal.insertDate}')">Delete</button>
-                </div>
+                        <button class="btn small edit" type="button" onclick="editMeal('${meal.insertDate}')">Edit</button>
+                        <button id="obuolys" class="btn small remove" type="button" onclick="deleteMeal('${meal.insertDate}')">Delete</button>
+                    </div>
                 </div>
             </div>`;
         });
