@@ -2,7 +2,10 @@
 EXECUTION
 ****************/
 // const editMealBtn = document.querySelector('.edit');
-// const lightbox = document.querySelector('.lightbox');
+const lightbox = document.querySelector('.lightbox');
+const form = lightbox.querySelector('form');
+const addNewMeal = document.getElementById('add-newMeal');
+const buttonAdd = document.getElementById('add-new-meal');
 
 const diary = new Diary();
 diary.loadMeals();
@@ -23,3 +26,15 @@ document.getElementById("add-new-meal").addEventListener("click", addMeal);
 //     }
 
 // });
+
+// paspaudus ant mygtuko ADDMEAL issoka lightbox su forma
+addNewMeal.addEventListener('click', () => {
+    lightbox.classList.add('show');
+    console.log('kvieciam forma!!!');
+})
+
+
+// padaro taip,kad paspaudus ant mygtuko jisai neperkrautu puslapio
+buttonAdd.addEventListener('click', e => {
+    e.preventDefault();
+})
