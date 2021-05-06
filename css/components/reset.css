@@ -134,3 +134,11 @@ body {
 .item:hover>.actions {
     display: inline-block;
 }
+
+.add-new {
+    display: inline-block;
+}
+
+.add-new:hover {
+    opacity: 1;
+}
