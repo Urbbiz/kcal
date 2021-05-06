@@ -30,13 +30,16 @@ class Diary {
     // ATIDARO EDIT FORMA 
     editMeal(insertDate) {
         const index = this.meals.findIndex(meal => meal.insertDate === insertDate);
-        // this.meals.splice(index, 1); //trina pizza is arejaus.
-        // this.saveMeals();
+
+        const editInput = document.getElementById('new-carb2');
+
+        editInput.value = "labas rytas";
 
         console.log('EDIT MYGTUKAS ANT MEALS???')
 
         lightbox.classList.add('show');
         lightbox.dataset.form = 'edit'; // sita eilute nukreipia butent i edit forma, o ne i add
+
     };
 
 
