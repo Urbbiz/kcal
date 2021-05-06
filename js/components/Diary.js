@@ -34,6 +34,8 @@ class Diary {
 
 
 
+
+
     totalCarbs() {
         return this.meals.reduce((currentTotal, currentMeal) => currentTotal + currentMeal.carb, 0);
     };

@@ -75,7 +75,25 @@ function editMeal(insertDate) {
 
     diary.editMeal(insertDate);
     const lightbox = document.querySelector('.lightbox');
-    lightbox.classList.add('show');
+    lightbox.classList.add('edit');
+
+    showMeals();
+}
+
+function addFormShow(insertDate) {
+
+    // diary.editMeal(insertDate);
+    const lightbox = document.querySelector('.lightbox');
+    lightbox.classList.add('edit');
+
+    showMeals();
+}
+
+function showAddForm() {
+
+    // diary.editMeal(insertDate);
+    const lightbox = document.querySelector('.lightbox');
+    lightbox.classList.add('edit');
 
     showMeals();
 }
