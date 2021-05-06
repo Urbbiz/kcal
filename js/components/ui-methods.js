@@ -70,3 +70,12 @@ function deleteMeal(insertDate) {
 
     showMeals();
 }
+
+function editMeal(insertDate) {
+
+    diary.editMeal(insertDate);
+    const lightbox = document.querySelector('.lightbox');
+    lightbox.classList.add('show');
+
+    showMeals();
+}
