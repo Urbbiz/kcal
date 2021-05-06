@@ -32,6 +32,7 @@ class Diary {
         const index = this.meals.findIndex(meal => meal.insertDate === insertDate);
         // this.meals.splice(index, 1); //trina pizza is arejaus.
         // this.saveMeals();
+
         console.log('Ar kas nors veikia???')
 
         lightbox.classList.add('show');
