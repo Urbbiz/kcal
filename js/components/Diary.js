@@ -33,7 +33,7 @@ class Diary {
         // this.meals.splice(index, 1); //trina pizza is arejaus.
         // this.saveMeals();
 
-        console.log('Ar kas nors veikia???')
+        console.log('EDIT MYGTUKAS ANT MEALS???')
 
         lightbox.classList.add('show');
         lightbox.dataset.form = 'edit'; // sita eilute nukreipia butent i edit forma, o ne i add
