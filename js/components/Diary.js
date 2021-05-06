@@ -17,6 +17,7 @@ class Diary {
         const newMeal = new Meal(params);
         this.meals.push(newMeal);
         this.saveMeals();
+        // lightbox.classList.remove('show'); // sitas nuima show css ir todel dingsta add meal forma
     };
 
     deleteMeal(insertDate) {
