@@ -37,4 +37,6 @@ addNewMeal.addEventListener('click', () => {
 // padaro taip,kad paspaudus ant mygtuko jisai neperkrautu puslapio
 buttonAdd.addEventListener('click', e => {
     e.preventDefault();
+    console.log('ar kas nors suveike?');
+    lightbox.classList.remove('show'); // sitas nuima show css ir todel dingsta add meal forma
 })
