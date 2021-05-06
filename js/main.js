@@ -20,13 +20,13 @@ document.getElementById("add-new-meal").addEventListener("click", addMeal);
 //     lightbox.classList.add('show');
 // })
 
-// addEventListener('keyup', ({ key }) => {
-//     console.log(key);
-//     if (key === 'Escape') {
-//         lightbox.classList.remove('show');
-//     }
+addEventListener('keyup', ({ key }) => {
+    console.log(key);
+    if (key === 'Escape') {
+        lightbox.classList.remove('show');
+    }
 
-// });
+});
 
 // paspaudus ant mygtuko ADDMEAL issoka lightbox su forma
 addNewMeal.addEventListener('click', () => {
@@ -34,7 +34,7 @@ addNewMeal.addEventListener('click', () => {
     console.log('kvieciam forma!!!');
 })
 
-
+// ADD FORM//
 // padaro taip,kad paspaudus ant mygtuko jisai neperkrautu puslapio
 buttonAdd.addEventListener('click', e => {
     e.preventDefault();
