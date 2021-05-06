@@ -6,6 +6,7 @@ const lightbox = document.querySelector('.lightbox');
 const form = lightbox.querySelector('form');
 const addNewMeal = document.getElementById('add-newMeal');
 const buttonAdd = document.getElementById('add-new-meal');
+const buttonCancel = document.getElementById('add-new-meal-cancel');
 
 const diary = new Diary();
 diary.loadMeals();
@@ -39,4 +40,9 @@ buttonAdd.addEventListener('click', e => {
     e.preventDefault();
     console.log('ar kas nors suveike?');
     lightbox.classList.remove('show'); // sitas nuima show css ir todel dingsta add meal forma
+})
+
+buttonCancel.addEventListener('click', e => {
+    e.preventDefault();
+    lightbox.classList.remove('show');
 })
