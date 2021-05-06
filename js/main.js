@@ -8,20 +8,20 @@ const addNewMeal = document.getElementById('add-newMeal');
 const buttonAdd = document.getElementById('add-new-meal');
 const buttonCancel = document.getElementById('add-new-meal-cancel');
 
+
 const diary = new Diary();
 diary.loadMeals();
 showMeals();
 
 
 document.getElementById("add-new-meal").addEventListener("click", addMeal);
-// document.getElementById("add-form-show").addEventListener("click", showForm);
 
-// editMealBtn.addEventListener('click', () => {
-//     lightbox.classList.add('show');
-// })
 
+
+
+// paspaudus ESCAPE mygtuka paslepia visas formas
 addEventListener('keyup', ({ key }) => {
-    console.log(key);
+    // console.log(key);
     if (key === 'Escape') {
         lightbox.classList.remove('show');
     }
@@ -31,6 +31,7 @@ addEventListener('keyup', ({ key }) => {
 // paspaudus ant mygtuko ADDMEAL issoka lightbox su forma
 addNewMeal.addEventListener('click', () => {
     lightbox.classList.add('show');
+    lightbox.dataset.form = 'add';
     console.log('kvieciam forma!!!');
 })
 

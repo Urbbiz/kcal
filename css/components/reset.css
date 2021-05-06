@@ -84,12 +84,21 @@ body {
 
 .updated {
     /* tas pats kas form*/
-    /* display: none; */
+    display: none;
     width: 100%;
     padding: 20px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 4px 8px #0003;
+}
+
+
+/* siti data-form ideti tam, kad atskirais momentais butu galima pasirinkti skirtingas formas */
+
+.lightbox[data-form="add"] .updated.add,
+.lightbox[data-form="edit"] .updated.edit {
+    /* tas pats kas form*/
+    display: inline-block;
 }
 
 .updated>*+* {
