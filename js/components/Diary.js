@@ -25,6 +25,17 @@ class Diary {
         this.saveMeals();
     };
 
+    editMeal(insertDate) {
+        const index = this.meals.findIndex(meal => meal.insertDate === insertDate);
+        // this.meals.splice(index, 1); //trina pizza is arejaus.
+        // this.saveMeals();
+        console.log('Ar kas nors veikia???')
+    };
+
+
+
+
+
     totalCarbs() {
         return this.meals.reduce((currentTotal, currentMeal) => currentTotal + currentMeal.carb, 0);
     };
@@ -36,6 +47,13 @@ class Diary {
     }
     totalKcal() {
         return this.meals.reduce((currentTotal, currentMeal) => currentTotal + currentMeal.kcal, 0);
+    }
+
+
+
+
+    initMealEditing(mealDiary) {
+        console.log('Inicijuojamas MEAL redagavimas');
     }
 
 

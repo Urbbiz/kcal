@@ -25,6 +25,8 @@
             <div>Total protein: <span id="total-protein"></span>g.</div>
             <div>Total fat: <span id="total-fat"></span>g.</div>
             <div>Total Kcal: <span id="total-kcal"></span></div>
+            <button class="btn small edit add " id="add-newMeal" onclick="addFormShow('${meal.insertDate}')">add Meal</button>
+
         </div>
 
         <!-- render meals -->
@@ -33,7 +35,7 @@
 
 
 
-    <section class="container new-pizza-form">
+    <!-- <section class="container new-pizza-form">
         <div class="row">
             <div class="col-4-6">
                 <h2> <span>Add </span>Meal</h2>
@@ -41,40 +43,49 @@
         </div>
         <div class="row">
 
-            <div class="col-4-6 col-xs-12">
-                <form class="block ">
-                    <div class="name">
-                        <div><label for="new-name">Name:</label></div>
-                        <!-- <div class="validation" id="new-name-validation"></div> -->
-                        <input type="text" id="new-name" />
-                    </div>
-                    <div class="name">
-                        <div><label for="new-carb">Carb:</label></div>
-                        <!-- <div class="validation" id="new-carb-validation"></div> -->
-                        <input type="text" id="new-carb" />
-                    </div>
-                    <div class="name">
-                        <div><label for="new-protein">Protein:</label></div>
-                        <!-- <div class="validation" id="new-protein"></div> -->
-                        <input type="text" id="new-protein" />
-                    </div>
-                    <div class="name">
-                        <div><label for="new-fat">Fat:</label></div>
-                        <!-- <div class="validation" id="new-fat-validation"></div> -->
-                        <input type="text" id="new-fat" />
-                    </div>
-                    <div class="name">
-                        <div><label for="new-kcal">Kcal:</label></div>
-                        <!-- <div class="validation" id="new-kcal-validation"></div> -->
-                        <input type="text" id="new-kcal" />
-                    </div>
+            <div class="col-4-6 col-xs-12 ">
+                <form class="block "> -->
 
-                    <button class="btn-white" type="button" id="add-new-meal">Add Meal</button>
-                </form>
-            </div>
+
+
+    </section>
+    <div class="lightbox" data-form="add">
+        <div class="background"></div>
+        <div class="content">
+            <form class="updated">
+                <h2 class="title">Add Meal</h2>
+                <div class="name">
+                    <div><label for="new-name">Name:</label></div>
+
+                    <input type="text" id="new-name" />
+                </div>
+                <div class="name">
+                    <div><label for="new-carb">Carb:</label></div>
+
+                    <input type="text" id="new-carb" />
+                </div>
+                <div class="name">
+                    <div><label for="new-protein">Protein:</label></div>
+
+                    <input type="text" id="new-protein" />
+                </div>
+                <div class="name">
+                    <div><label for="new-fat">Fat:</label></div>
+
+                    <input type="text" id="new-fat" />
+                </div>
+                <div class="name">
+                    <div><label for="new-kcal">Kcal:</label></div>
+
+                    <input type="text" id="new-kcal" />
+                </div>
+
+                <button class="btn-white" type="button" id="add-new-meal">Add Meal</button>
+            </form>
         </div>
+    </div>
 
-        <!-- EDIT MEAL SECTION -->
+    <!-- EDIT MEAL SECTION -->
     </section>
     <div class="lightbox" data-form="add">
         <div class="background"></div>
