@@ -30,10 +30,16 @@ class Diary {
     // ATIDARO EDIT FORMA 
     editMeal(insertDate) {
         const index = this.meals.findIndex(meal => meal.insertDate === insertDate);
+        const meal = this.meals[index]; // susiradau ta objekta is kurio galesiu istraukti visas kitas jo sudedamasias:
+
+
 
         const editInput = document.getElementById('new-carb2');
 
-        editInput.value = "labas rytas";
+        // editInput.value = "labas rytas";
+        editInput.value = meal.carb;
+        console.log(insertDate);
+        console.log(meal);
 
         console.log('EDIT MYGTUKAS ANT MEALS???')
 
