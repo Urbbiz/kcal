@@ -35,9 +35,19 @@ class Diary {
 
         //susirandu elementus, kuriuos noresiu atvaizduoti
         const editName = document.getElementById('edit-name');
+        const editCarb = document.getElementById('edit-carb');
+        const editProtein = document.getElementById('edit-protein');
+        const editFat = document.getElementById('edit-fat');
+        const editKcal = document.getElementById('edit-kcal');
 
-        // editInput.value = "labas rytas";
+
+        // iskivieciu rastus elementus i edit formos inputus:
         editName.value = meal.name;
+        editCarb.value = meal.carb;
+        editProtein.value = meal.protein;
+        editFat.value = meal.fat;
+        editKcal.value = meal.kcal;
+
         console.log(insertDate);
         console.log(meal);
 
