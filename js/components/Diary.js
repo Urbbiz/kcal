@@ -33,11 +33,11 @@ class Diary {
         const meal = this.meals[index]; // susiradau ta objekta is kurio galesiu istraukti visas kitas jo sudedamasias:
 
 
-
-        const editInput = document.getElementById('new-carb2');
+        //susirandu elementus, kuriuos noresiu atvaizduoti
+        const editName = document.getElementById('edit-name');
 
         // editInput.value = "labas rytas";
-        editInput.value = meal.carb;
+        editName.value = meal.name;
         console.log(insertDate);
         console.log(meal);
 
