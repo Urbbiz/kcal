@@ -39,6 +39,15 @@ class Diary {
         const editProtein = document.getElementById('edit-protein');
         const editFat = document.getElementById('edit-fat');
         const editKcal = document.getElementById('edit-kcal');
+        const buttonCancelEdit = document.getElementById('edit-cancel-btn');
+
+        buttonCancel.addEventListener('click', e => {
+            e.preventDefault();
+            lightbox.classList.remove('show');
+        })
+
+
+
 
 
         // iskivieciu rastus elementus i edit formos inputus:
