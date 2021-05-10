@@ -52,9 +52,10 @@ class Diary {
             this.meals[index].name = editName.value; //paeditino inputa ir atnaujino, 
             lightbox.classList.remove('show');
 
-            this.meals[index].name.saveMeals();
+            this.saveMeals(meal);
             showMeals();
             console.log('editeditedit');
+            this.saveMeals();
         })
 
 
