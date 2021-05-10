@@ -40,10 +40,21 @@ class Diary {
         const editFat = document.getElementById('edit-fat');
         const editKcal = document.getElementById('edit-kcal');
         const buttonCancelEdit = document.getElementById('edit-cancel-btn');
+        const buttonEditEdit = document.getElementById('edit-edit-btn');
 
-        buttonCancel.addEventListener('click', e => {
+        buttonCancelEdit.addEventListener('click', e => {
             e.preventDefault();
             lightbox.classList.remove('show');
+        })
+
+        buttonEditEdit.addEventListener('click', e => {
+            e.preventDefault();
+            this.meals[index].name = editName.value; //paeditino inputa ir atnaujino, 
+            lightbox.classList.remove('show');
+
+            this.meals[index].name.saveMeals();
+            showMeals();
+            console.log('editeditedit');
         })
 
 
