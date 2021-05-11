@@ -18,7 +18,7 @@ document.getElementById("add-new-meal").addEventListener("click", addMeal);
 
 // *********************
 
-const editForm = new editForm({
+const editForm = new EditForm({
     selector: 'form.edit'
 });
 editForm.init();
