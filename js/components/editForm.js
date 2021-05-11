@@ -2,6 +2,7 @@ class EditForm {
     constructor(params) {
         this.selector = params.selector;
         this.DOM = null;
+        this.lightbox = null;
 
         this.editName = null;
         this.editCarb = null;
@@ -32,6 +33,7 @@ class EditForm {
     }
 
     findInnerElements() {
+        this.lightbox = document.querySelector('.lightbox');
         this.editName = document.getElementById('edit-name');
         this.editCarb = document.getElementById('edit-carb');
         this.editProtein = document.getElementById('edit-protein');
@@ -39,5 +41,14 @@ class EditForm {
         this.editKcal = document.getElementById('edit-kcal');
         this.buttonCancelEdit = document.getElementById('edit-cancel-btn');
         this.buttonEditEdit = document.getElementById('edit-edit-btn');
+    }
+
+    show() {
+        this.lightbox.dataset.form = 'edit';
+        this.lightbox.classList.add('show');
+    }
+    hide() {
+
+        this.lightbox.classList.remove('show');
     }
 }
