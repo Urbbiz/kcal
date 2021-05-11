@@ -16,7 +16,13 @@ showMeals();
 
 document.getElementById("add-new-meal").addEventListener("click", addMeal);
 
+// *********************
 
+const editForm = new editForm({
+    selector: 'form.edit'
+});
+
+//**********************
 
 
 // paspaudus ESCAPE mygtuka paslepia visas formas
