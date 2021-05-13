@@ -27,53 +27,53 @@ class Diary {
     };
 
 
-    // ATIDARO EDIT FORMA 
-    // editMeal(insertDate) {
-    //     const index = this.meals.findIndex(meal => meal.insertDate === insertDate);
-    //     const meal = this.meals[index]; // susiradau ta objekta is kurio galesiu istraukti visas kitas jo sudedamasias:
+    // ATIDARO EDIT FORMA
+    editMeal(insertDate) {
+        const index = this.meals.findIndex(meal => meal.insertDate === insertDate);
+        const meal = this.meals[index]; // susiradau ta objekta is kurio galesiu istraukti visas kitas jo sudedamasias:
 
 
-    //susirandu elementus, kuriuos noresiu atvaizduoti
-    // const editName = document.getElementById('edit-name');
-    // const editCarb = document.getElementById('edit-carb');
-    // const editProtein = document.getElementById('edit-protein');
-    // const editFat = document.getElementById('edit-fat');
-    // const editKcal = document.getElementById('edit-kcal');
-    // const buttonCancelEdit = document.getElementById('edit-cancel-btn');
-    // const buttonEditEdit = document.getElementById('edit-edit-btn');
+        // susirandu elementus, kuriuos noresiu atvaizduoti
+        const editName = document.getElementById('edit-name');
+        const editCarb = document.getElementById('edit-carb');
+        const editProtein = document.getElementById('edit-protein');
+        const editFat = document.getElementById('edit-fat');
+        const editKcal = document.getElementById('edit-kcal');
+        const buttonCancelEdit = document.getElementById('edit-cancel-btn');
+        const buttonEditEdit = document.getElementById('edit-edit-btn');
 
-    // buttonCancelEdit.addEventListener('click', e => {
-    //     e.preventDefault();
-    //     lightbox.classList.remove('show');
-    // })
+        buttonCancelEdit.addEventListener('click', e => {
+            e.preventDefault();
+            lightbox.classList.remove('show');
+        })
 
-    // buttonEditEdit.addEventListener('click', e => {
-    //     e.preventDefault();
-    //     this.meals[index].name = editName.value; //paeditino inputa ir atnaujino, 
-    //     lightbox.classList.remove('show');
+        buttonEditEdit.addEventListener('click', e => {
+            e.preventDefault();
+            this.meals[index].name = editName.value; //paeditino inputa ir atnaujino, 
+            lightbox.classList.remove('show');
 
-    //     this.saveMeals();
-    //     showMeals();
-    //     console.log('editeditedit');
-    //     this.saveMeals();
-    // })
+            this.saveMeals();
+            showMeals();
+            console.log('editeditedit');
+            this.saveMeals();
+        })
 
-    // iskivieciu rastus elementus i edit formos inputus:
-    //     editName.value = meal.name;
-    //     editCarb.value = meal.carb;
-    //     editProtein.value = meal.protein;
-    //     editFat.value = meal.fat;
-    //     editKcal.value = meal.kcal;
+        // iskivieciu rastus elementus i edit formos inputus:
+        editName.value = meal.name;
+        editCarb.value = meal.carb;
+        editProtein.value = meal.protein;
+        editFat.value = meal.fat;
+        editKcal.value = meal.kcal;
 
-    //     console.log(insertDate);
-    //     console.log(meal);
+        console.log(insertDate);
+        console.log(meal);
 
-    //     console.log('EDIT MYGTUKAS ANT MEALS???')
+        console.log('EDIT MYGTUKAS ANT MEALS???')
 
-    //     lightbox.classList.add('show');
-    //     lightbox.dataset.form = 'edit'; // sita eilute nukreipia butent i edit forma, o ne i add
+        lightbox.classList.add('show');
+        lightbox.dataset.form = 'edit'; // sita eilute nukreipia butent i edit forma, o ne i add
 
-    // };
+    };
 
 
 

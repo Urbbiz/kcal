@@ -84,7 +84,7 @@ function editMeal(insertDate) {
 
 function addFormShow(insertDate) {
 
-    // diary.editMeal(insertDate);
+    diary.editMeal(insertDate);
     const lightbox = document.querySelector('.lightbox');
     lightbox.classList.add('edit');
 
